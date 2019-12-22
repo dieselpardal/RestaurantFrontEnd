@@ -62,6 +62,13 @@ Todas informaçoes no código são em inglês.
 
 3) Instalação de JASMINE
 
+    É tipo de unitário de teste.
+
+    `$ npm install --save-dev jasmine`
+
+    `node node_modules/jasmine/bin/jasmine init`
+
+    
    
   
    

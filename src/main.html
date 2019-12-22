@@ -6,31 +6,26 @@
     <meta name='viewport' content='initial-scale=1.0, maximum-scale=1.0, width=device-width'>
     <meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests'>
     <link rel='stylesheet' href='../css/style.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
     <script src='../js/tool.js'></script>
     <title>Restaurant Favorite</title>
 </head>
-<body>
+<body id="body">
         <br />
         <div class="container">
     <div class="frame">
             <h2>Os Favoritos de Restaurantes</h2>
-            <p>London is the capital of England.</p>
+            <p>Os times da DBServer podem escolher um favorito de Restaurante onde irão almoçar nesta semana.</p>
             <p>
-            <table >
+            <table id="frameTable">
                 <tr>
+                    <th>Semana</th>
                     <th>Segunda-feira</th>
                     <th>Terça-feira</th>
                     <th>Quarta-feira</th>
                     <th>Quinta-feira</th>
                     <th>Sexta-feira</th>
-                </tr>
                 <tr id="weekFood">
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-
                 </tr>
             </table>
         </p>
@@ -62,19 +57,23 @@
                             <p>A votação de Favoritos de Restaurantes: </p>
                             <table>
                                 <tr>
-                                    <th>Favoritos</th>
-                                    <th>Votos</th>
-                                </tr>
-                                <tr id="weekNow">
-
-                                </tr>
+                                    <th class='sizetd'>Favoritos</th>
+                                    <th class='sizetd'>Votos</th>
+                                </table>
+                                <table id="voteFavorite"></table>
                             </table>
+                            <br/>
                         </div>
                     </div>
                 </div>
             </p>
         </div>
     </div>
+    <div id='alertBox'>
+        <div class='message'></div>
+        <button class='okok'>Ok</button>
+    </div>
+
    <script>
        const tool = new Tool();
        tool.createFoodListButtons("createButton");

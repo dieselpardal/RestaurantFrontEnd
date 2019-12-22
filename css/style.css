@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
 body {
     background-color: #E0E0E0;
     font-family: "Roboto", helvetica, arial, sans-serif;
@@ -42,6 +44,10 @@ body {
   .buttonMini {
     width: 200px;
     height:30px;
+  }
+
+  .sizetd {
+      width: 50%;
   }
 
   input[type=button]
@@ -98,4 +104,50 @@ body {
     border-right: 1px solid #C1C3D1;
   }
 
-  
+  #alertBox
+{
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+    position: absolute;
+    display: none;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    padding: 10px 8px 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+    z-index:999;
+}
+
+#alertBox button {
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    padding: 2px;
+    margin-left: 20px;
+    text-align: center;
+    width: 150px;
+    cursor: pointer;
+}
+
+#alertBox button:hover
+{
+    background-color: #ddd;
+}
+
+#alertBox .message
+{
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+    margin-bottom: 18px;
+}
