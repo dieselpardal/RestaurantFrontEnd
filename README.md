@@ -52,9 +52,9 @@ Todas informaçoes no código são em inglês.
 
 2) Instalação de http-server
     Ter Node.js instalado na sistema.
-    Na Terminal, executar o comando *npm install http-server -g*
-    E executar um comando *http-server*
-    Na pagina, digitr *localhost:8080*   
+    Na Terminal, executar o comando **npm install http-server -g**
+    E executar um comando **http-server**
+    Na pagina, digitr **localhost:8080**   
 
 3) Instalação de JUNIT
 
