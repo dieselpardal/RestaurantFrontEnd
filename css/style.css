@@ -1,0 +1,101 @@
+body {
+    background-color: #E0E0E0;
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .frame {
+    border:1px ;
+    width:95% ;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  .board{
+    border:1px ;
+    width:90% ;
+    background-color: white;
+    padding:5px;
+    text-align:left;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  .buttonConteiner {
+    width:100%; 
+     text-align: center; 
+  }
+
+  .buttonMain {
+    margin: 3px;
+    display: inline-block;
+  }
+
+  .buttonMini {
+    width: 200px;
+    height:30px;
+  }
+
+  input[type=button]
+  {
+    background-color: rgb(199, 199, 199)
+  }
+
+  input[type=button]:hover
+{
+  background-color: rgb(245, 245, 245)
+}
+
+  table{
+    background: white;
+    border-radius:3px;
+    border-collapse: collapse;
+    margin: auto;
+    padding:5px;
+    width: 90%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    animation: float 5s infinite;
+  }
+
+  th {
+    color:#D5DDE5;
+    background:#1b1e24;
+    border-bottom:4px solid #9ea7af;
+    border-right: 1px solid #343a45;
+    font-size:16px;
+    font-weight: 100;
+    padding:10px;
+    text-align:center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    vertical-align:middle;
+  }
+
+  th:first-child {
+    border-top-left-radius:5px;
+  }
+  
+  th:last-child {
+    border-top-right-radius:5px;
+    border-right:none;
+  }
+
+  td {
+    background:#FFFFFF;
+    padding:5px;
+    text-align:center;
+    vertical-align:middle;
+    font-weight:300;
+    font-size:14px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #C1C3D1;
+  }
+
+  

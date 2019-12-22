@@ -34,6 +34,8 @@ Para sair de programa, tecla "E".
 Entendimento e execução do escopo, organização, execução de códigos,
 uso de técnicas de programação, padrões de projeto e nível de documentação.
 
+As páginas com responsivo.
+
 Implementação em FrontEnd
 
 IDE: VSC.
@@ -42,27 +44,25 @@ Todas informaçoes no código são em inglês.
 
 
 #### VERSÃO
-- Java: 11.0.2
-- Brew: Homebrew 2.0.3
-- Junit: 4.12
+- http-server: 0.12.0
 
 #### INSTALAÇÃO
 
 1) Instalacão de Visual Studio Code
 
 2) Instalação de http-server
+
     Ter Node.js instalado na sistema.
+
     Na Terminal, executar o comando **npm install http-server -g**
+
     E executar um comando **http-server**
-    Na pagina, digitr **localhost:8080**   
 
-3) Instalação de JUNIT
+    Na página, digitr **localhost:8080**   
 
-   JUnit é um framework que facilita o desenvolvimento e execução de testes unitários em código Java.
-   Para usar o JUNIT, você precisa ter o JDK instalado. Você também pode integrá-lo à sua IDE.
-   Para instalar JUNIT, entra no link https://www.jetbrains.com/help/idea/configuring-testing-libraries.html
-   Após de desenvolver o código, execute Test.
-   Para permite os resultados de testes pelo JUNIT.
+3) Instalação de JASMINE
+
+   
   
    
 ### Para Executar:

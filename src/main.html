@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <meta name='viewport' content='initial-scale=1.0, maximum-scale=1.0, width=device-width'>
+    <meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests'>
+    <link rel='stylesheet' href='../css/style.css'>
+    <script src='../js/tool.js'></script>
+    <title>Restaurant Favorite</title>
+</head>
+<body>
+        <br />
+        <div class="container">
+    <div class="frame">
+            <h2>Os Favoritos de Restaurantes</h2>
+            <p>London is the capital of England.</p>
+            <p>
+            <table >
+                <tr>
+                    <th>Segunda-feira</th>
+                    <th>Terça-feira</th>
+                    <th>Quarta-feira</th>
+                    <th>Quinta-feira</th>
+                    <th>Sexta-feira</th>
+                </tr>
+                <tr id="weekFood">
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+
+                </tr>
+            </table>
+        </p>
+        <p>
+                <div class="container">
+                    <div class="board">
+                        <p>Semana Atual: <b><a id="weekNow"></a></b></p>
+                </div>
+            </div>
+            </p>
+
+            <p>
+                <div class="container">
+                    <div class="board">
+                        <div>
+                        <p>Escolhe para hoje:</p>
+                        <div class="buttonConteiner">
+                                <div id="createButton"></div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </p>
+            <p>
+            <div class="container">
+                    <div class="board">
+                        <div>
+                            <p>A votação de Favoritos de Restaurantes: </p>
+                            <table>
+                                <tr>
+                                    <th>Favoritos</th>
+                                    <th>Votos</th>
+                                </tr>
+                                <tr id="weekNow">
+
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </p>
+        </div>
+    </div>
+   <script>
+       const tool = new Tool();
+       tool.createFoodListButtons("createButton");
+       tool.getWeekNow("weekNow");
+   </script>
+</body>
+</html>
