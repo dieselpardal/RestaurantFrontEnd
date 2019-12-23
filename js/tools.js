@@ -1,30 +1,30 @@
-class Tool  {
+Tools = function() {};
 
-    EMPTY = -1;
-    foods = ["Espaco 32", "Panorama", "Palatus", "Ponto Onze", "Intervalo 50", "Universitário", "Sabor Família", "Garten Bistrô"];
-    weeks = ["Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira"];
-    weekFavoriteList = [];
-    voteList = [];
-    now = 0;
-    maxWeek = 5;
-    pos = 0;
-    loop=0;
-    row= 1;
-    aniFrame = null;
-
-    constructor() {    
-        for(var item in this.foods) {
-            this.weekFavoriteList.push(this.EMPTY);
-            this.voteList.push(0);
-            this.now=0;
+    Tools.prototype.init = function() {    
+    this.EMPTY = -1;
+    this.foods = ["Espaco 32", "Panorama", "Palatus", "Ponto Onze", "Intervalo 50", "Universitário", "Sabor Família", "Garten Bistrô"];
+    this.weeks = ["Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira"];
+    this.weekFavoriteList = [];
+    this.voteList = [];
+    this.now = 0;
+    this.maxWeek = 5;
+    this.pos = 0;
+    this.loop=0;
+    this.row= 1;
+    this.aniFrame = null;
+    for(var item in this.foods) {
+        this.weekFavoriteList.push(this.EMPTY);
+        this.voteList.push(0);
+        this.now=0;
         }
-
+    }
+    Tools.prototype.initShow = function() {    
+        this.init();
         this.showVoteFavorite("voteFavorite", "red");
         this.showWeekFavorite("weekFood");
-        
     }
 
-    showWeekFavorite(id, color) {
+    Tools.prototype.showWeekFavorite = function(id, color) {
         var onlyWeek="<td>"+this.row+"</td>";
         for(var idWeek in this.weeks) {
             var choose = this.weekFavoriteList[idWeek];
@@ -40,7 +40,7 @@ class Tool  {
         document.getElementById(id).innerHTML = onlyWeek;   
     }
 
-    showVoteFavorite(id) {
+    Tools.prototype.showVoteFavorite = function(id) {
         var str="";
         for(var idFood in this.foods) {
             var name = this.foods[idFood];
@@ -50,17 +50,13 @@ class Tool  {
         document.getElementById(id).innerHTML = str;   
     }
 
-    weekClear() {
+    Tools.prototype.weekClear = function() {
         for(var id in this.weeks) {
             this.weekFavoriteList[id] = this.EMPTY;
         }
     }
 
-    getFoodList(){
-        return foods;
-    }
-
-    createFoodListButtons(id) {
+    Tools.prototype.createFoodListButtons = function(id) {
         var str="";
         for(var idFood in this.foods) {
             var name = this.foods[idFood];
@@ -69,11 +65,11 @@ class Tool  {
         }
     }
 
-    getWeekNow(id) {
+    Tools.prototype.getWeekNow = function(id) {
         document.getElementById(id).innerHTML = this.weeks[this.now];
     }
 
-    isNotExistThisWeek(idFood) {
+    Tools.prototype.isNotExistThisWeek = function(idFood) {
         var day = 0;
         while (day < this.weeks.length) {
                 if (day != this.now) {
@@ -86,7 +82,7 @@ class Tool  {
         return true;
     }
 
-    addFavorite(item) {
+    Tools.prototype.addFavorite = function(item) {
         if(this.isNotExistThisWeek(item)) {
             this.weekFavoriteList[this.now] = item;
             this.voteList[item]++;
@@ -99,34 +95,28 @@ class Tool  {
             this.getWeekNow("weekNow");
             this.showWeekFavorite("weekFood", "red");
             this.showVoteFavorite("voteFavorite");
-            
-
         } else {
-            
             this.doAlert("Não pode repetir um favorito de Restaurante.", "400", "90", function okok() {});
-            
         }
     }
 
-   
-
-    doAlert(msg, x, y, okFn) {
-    var xcenter=(-parseInt(x)/2);
-    var xcenterpx = xcenter + "px";
-    var confirmBox = $("#alertBox");
-    confirmBox.css({"width": x+"px"});
-    confirmBox.css({"height": y+"px"});
-    confirmBox.css({"margin-left": xcenterpx});
-    confirmBox.find(".message").html(msg);
-    confirmBox.find(".okok").unbind().click(function()
-    {
-        confirmBox.hide();
-    });
-    confirmBox.find(".okok").click(okFn);
-    confirmBox.show();
+    Tools.prototype.doAlert = function(msg, x, y, okFn) {
+        var xcenter=(-parseInt(x)/2);
+        var xcenterpx = xcenter + "px";
+        var confirmBox = $("#alertBox");
+        confirmBox.css({"width": x+"px"});
+        confirmBox.css({"height": y+"px"});
+        confirmBox.css({"margin-left": xcenterpx});
+        confirmBox.find(".message").html(msg);
+        confirmBox.find(".okok").unbind().click(function()
+        {
+            confirmBox.hide();
+        });
+        confirmBox.find(".okok").click(okFn);
+        confirmBox.show();
     }
 
-    weekTotal(row) {
+    Tools.prototype.weekTotal = function(row) {
         var cell = [];
         var query = 0;
         var table = document.getElementById("frameTable");
@@ -142,13 +132,4 @@ class Tool  {
             cell[query].innerHTML = name;
             
         }
-        
     }
-
-    accessButton(access) {
-        var buttons = document.getElementById("createButton");
-        buttons.style.display = access;
-    }
-
-    
-}

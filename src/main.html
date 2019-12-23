@@ -7,7 +7,7 @@
     <meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests'>
     <link rel='stylesheet' href='../css/style.css'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-    <script src='../js/tool.js'></script>
+    <script src='../js/tools.js'></script>
     <title>Restaurant Favorite</title>
 </head>
 <body id="body">
@@ -75,7 +75,8 @@
     </div>
 
    <script>
-       const tool = new Tool();
+       var tool = new Tools();
+       tool.init();
        tool.createFoodListButtons("createButton");
        tool.getWeekNow("weekNow");
    </script>

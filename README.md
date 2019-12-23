@@ -60,23 +60,24 @@ Todas informaçoes no código são em inglês.
 
     Na página, digitr **localhost:8080**   
 
-3) Instalação de JASMINE
+
+3) Instalação de MOCHA
 
     É tipo de unitário de teste.
 
-    `$ npm install --save-dev jasmine`
+    `$ npm install -g mocha`
 
-    `node node_modules/jasmine/bin/jasmine init`
+     Criar uma pasta "test".
+
+    Executar os testes: `$ mocha`
 
     
-   
-  
-   
-### Para Executar:
-  clique **Run Main** na classe *Main*.
+
+### Para Executar no localhost:
+  Digite **http-server** na terminal e exibir na pagina localhost:8080/.
   
 ### Para Testar:
-   Clique **Run All Tests** na pasta *test*.
+   Clique **mocha** na temrinal.
 
 
 *Obrigado!*
