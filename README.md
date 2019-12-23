@@ -46,6 +46,8 @@ Todas informaçoes no código são em inglês.
 #### VERSÃO
 - http-server: 0.12.0
 
+- mocha: 6.2.2
+
 #### INSTALAÇÃO
 
 1) Instalacão de Visual Studio Code
@@ -58,7 +60,7 @@ Todas informaçoes no código são em inglês.
 
     E executar um comando **http-server**
 
-    Na página, digitr **localhost:8080**   
+    Na página, digite **localhost:8080**   
 
 
 3) Instalação de MOCHA
@@ -72,12 +74,11 @@ Todas informaçoes no código são em inglês.
     Executar os testes: `$ mocha`
 
     
-
 ### Para Executar no localhost:
-  Digite **http-server** na terminal e exibir na pagina localhost:8080/.
+  Digite `http-server` na terminal e exibir na pagina localhost:8080/.
   
 ### Para Testar:
-   Clique **mocha** na temrinal.
+   Clique `mocha` na temrinal.
 
 
 *Obrigado!*
