@@ -19,6 +19,8 @@ describe('Tool test', function(){
   it('Init variables:', function(){
 
       assert.equal(tool.row, 1);
+      assert.equal(tool.maxWeek, 5);
+      
   });
 
 });

@@ -36,7 +36,6 @@ Tools = function() {};
                 
             onlyWeek+="<td style='color:"+color+";'>"+name+"</td>\n";
         }
-        
         document.getElementById(id).innerHTML = onlyWeek;   
     }
 
@@ -109,9 +108,9 @@ Tools = function() {};
         confirmBox.css({"margin-left": xcenterpx});
         confirmBox.find(".message").html(msg);
         confirmBox.find(".okok").unbind().click(function()
-        {
-            confirmBox.hide();
-        });
+            {
+                confirmBox.hide();
+            });
         confirmBox.find(".okok").click(okFn);
         confirmBox.show();
     }

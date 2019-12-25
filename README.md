@@ -78,7 +78,7 @@ Todas informaçoes no código são em inglês.
   Digite `http-server` na terminal e exibir na pagina localhost:8080/.
   
 ### Para Testar:
-   Clique `mocha` na temrinal.
+   Clique `mocha` na terminal.
 
 
 *Obrigado!*
