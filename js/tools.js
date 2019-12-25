@@ -21,7 +21,7 @@ Tools = function() {};
     Tools.prototype.initShow = function() {    
         this.init();
         this.showVoteFavorite("voteFavorite", "red");
-        this.showWeekFavorite("weekFood");
+        this.showWeekFavorite("weekFood", "blue");
     }
 
     Tools.prototype.showWeekFavorite = function(id, color) {

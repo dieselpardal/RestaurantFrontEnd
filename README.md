@@ -73,7 +73,15 @@ Todas informaçoes no código são em inglês.
 
     Executar os testes: `$ mocha`
 
-    
+4) Instalação de modulo Simon, jsdom, mock e jquery para Mocha.
+
+    `$ npm install sinon`
+
+    `$ npm install --save-dev --save-exact jsdom jsdom-global`
+
+    `$ npm install jquery`
+
+
 ### Para Executar no localhost:
   Digite `http-server` na terminal e exibir na pagina localhost:8080/.
   
