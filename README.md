@@ -14,7 +14,7 @@ todos os dias gastam 30 minutos decidindo onde irão almoçar. Vamos fazer um 
 sistema que auxilie essa tomada de decisão!
 
 #### COMO JOGAR
-Na tela "ARE WE GOING TO THE RESTAURANT?", e deve observar 5 restaurantes diferentes, uma votação, 
+Na tela "ARE WE GOING TO THE RESTAURANT?", e deve observar 8 restaurantes existidos e diferentes, uma votação, 
 uma tabela de semana e o favorito.
 
 A semana inicializa a segunda-feira. 
@@ -27,8 +27,6 @@ Regra: não pode repetir mais uma vez nessa semana. Somente permite o caso da pr
 
 A lista de votação é que resultado de restaurante escolhido.
 
-Para sair de programa, tecla "E". 
-
 
 #### DESENVOLVIMENTO
 Entendimento e execução do escopo, organização, execução de códigos,
@@ -40,7 +38,7 @@ Implementação em FrontEnd
 
 IDE: VSC.
 
-Todas informaçoes no código são em inglês.
+Todas informações no código são em inglês.
 
 
 #### VERSÃO
@@ -72,6 +70,7 @@ Todas informaçoes no código são em inglês.
      Criar uma pasta "test".
 
     Executar os testes: `$ mocha`
+    
 
 4) Instalação de modulo Simon, jsdom, mock e jquery para Mocha.
 
@@ -83,10 +82,10 @@ Todas informaçoes no código são em inglês.
 
 
 ### Para Executar no localhost:
-  Digite `http-server` na terminal e exibir na pagina localhost:8080/.
+  Digite `$ http-server` na terminal e exibir na pagina localhost:8080/.
   
 ### Para Testar:
-   Clique `mocha` na terminal.
+   Clique `$ mocha` na pasta de projeto na terminal.
 
 
 *Obrigado!*
