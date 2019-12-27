@@ -1,4 +1,4 @@
-PROJETO DE FAVORITO DE RESTAURANTE SOMENTE FRONTEND
+FRONTEND PARA SISTEMA DE VOTAÇÃO DO RESTAURANTE FAVORITO DA SEMANA
 =
 - versão 1.0 por desenolvedor Full Stack **Ivan Diesel**
 - dieselpardal@gmail.com
@@ -13,32 +13,30 @@ Os times da DBServer enfrentam um grande problema, como eles são muito democra
 todos os dias gastam 30 minutos decidindo onde irão almoçar. Vamos fazer um pequeno 
 sistema que auxilie essa tomada de decisão!
 
-#### COMO JOGAR
-Na tela "ARE WE GOING TO THE RESTAURANT?", e deve observar 8 restaurantes existidos e diferentes, uma votação, 
-uma tabela de semana e o favorito.
+#### COMO UTILIZAR
 
-A semana inicializa a segunda-feira. 
+Na página "Os Favoritos de Restaurantes", observa-se uma tabela com o nome dos dias da semana, o número da semana correspondente e espaços que serão preenchidos com os nomes dos restaurantes mais votados.
 
-Usuário pode escolher um número de favorito de restaurante e colocar a votação.
+Logo abaixo existe uma lista com botões nomeados com os nomes de oito restaurantes diferentes. Ao clicar no nome do restaurante um voto é adicionado para o mesmo, adicionando seu nome na tabela da semana correspondente indicado pelo rótulo “Semana Atual”.
 
-Após de concluir a final de semana, será novo favorito na próxima semana.
+É possível ver a quantidade de votos que um restaurante recebeu em uma tabela ao final da página.
 
-Regra: não pode repetir mais uma vez nessa semana. Somente permite o caso da próxima semana.
+Ao final da semana o restaurante com maior votação será o favorito da semana seguinte.
 
-A lista de votação é que resultado de restaurante escolhido.
+Regra: o usuário não pode votar mais de uma vez no mesmo restaurante para o mesmo número da semana. O mesmo restaurante só pode ser votado novamente quando trocar o número da semana.
 
 
 #### DESENVOLVIMENTO
 Entendimento e execução do escopo, organização, execução de códigos,
 uso de técnicas de programação, padrões de projeto e nível de documentação.
 
-As páginas com responsivo.
+Páginas responsivas.
 
 Implementação em FrontEnd
 
-IDE: VSC.
+IDE: VSC (Visual Studio Code).
 
-Todas informações no código são em inglês.
+Todas informações no código estão em inglês.
 
 
 #### VERSÃO
@@ -52,18 +50,16 @@ Todas informações no código são em inglês.
 
 2) Instalação de http-server
 
-    Ter Node.js instalado na sistema.
+    Ter Node.js instalado no sistema.
 
-    Na Terminal, executar o comando **npm install http-server -g**
+    No Terminal, executar o comando **npm install http-server -g**
 
-    E executar um comando **http-server**
+    Executar o comando **http-server**
 
-    Na página, digite **localhost:8080**   
+    No navegador web, digitar o endereço **localhost:8080**   
 
 
-3) Instalação de MOCHA
-
-    É tipo de unitário de teste.
+3) Instalação de MOCHA (teste unitário)
 
     `$ npm install -g mocha`
 
@@ -81,11 +77,9 @@ Todas informações no código são em inglês.
     `$ npm install jquery`
 
 
-### Para Executar no localhost:
-  Digite `$ http-server` na terminal e exibir na pagina localhost:8080/.
+### Executar no localhost:
+  Digitar `$ http-server` no terminal e abrir na pagina localhost:8080/.
   
-### Para Testar:
-   Clique `$ mocha` na pasta de projeto na terminal.
+### Efetuar Testar:
+   Clique `$ mocha` na pasta de projeto no terminal.
 
-
-*Obrigado!*
